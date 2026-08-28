@@ -41,6 +41,19 @@ $ ls -l file.txt
 - w (write = 2): sửa, xóa nội dung file / tạo-xóa file trong thư mục
 - x (execute = 1): chạy file như chương trình / cd vào thư mục đó
 
+## Bảng giá trị octal
+
+| Số | Ký hiệu | Ý nghĩa |
+|---|---|---|
+| 0 | `---` | Không có quyền |
+| 1 | `--x` | Thực thi |
+| 2 | `-w-` | Ghi |
+| 3 | `-wx` | Thực thi + Ghi |
+| 4 | `r--` | Đọc |
+| 5 | `r-x` | Đọc + Thực thi |
+| 6 | `rw-` | Đọc + Ghi |
+| 7 | `rwx` | Đọc + Ghi + Thực thi |
+
 ## Đổi quyền bằng chmod
 
 Dạng số (octal) — cộng 4+2+1 cho từng nhóm owner/group/others:
